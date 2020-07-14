@@ -1,0 +1,8 @@
+# ninja log v5
+0	63	1592920602	CMakeFiles/keys.dir/keys.c.o	57b7ea1389522363
+63	153	1592920602	/Users/kmikheev/StudioProjects/gibdd-checker/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libkeys.so	a4bb401fc536cd60
+0	20	0	clean	63ac4b29a133e79b
+1	52	1594632336	CMakeFiles/keys.dir/keys.c.o	57b7ea1389522363
+52	129	1594632336	/Users/kmikheev/StudioProjects/gibdd-checker/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libkeys.so	a4bb401fc536cd60
+1	77	1594706160	CMakeFiles/keys.dir/keys.c.o	57b7ea1389522363
+77	167	1594706160	/Users/kmikheev/StudioProjects/gibdd-checker/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libkeys.so	a4bb401fc536cd60

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_content"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:clickable="true"
+    android:background="@color/background">
+
+        <LinearLayout
+            android:id="@+id/pref_settings_1_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:focusable="false"
+            android:clickable="false"
+            android:gravity="center"
+            android:background="@drawable/divider_bottom">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                    android:text="@string/pref_settings_1_title" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                    android:text="@string/pref_settings_1_description" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pref_settings_2_key"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:background="@drawable/divider_bottom">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:clickable="false"
+                android:focusable="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                android:text="@string/pref_settings_2_title" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pref_settings_3_key"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:background="@drawable/divider_bottom">
+
+            <TextView
+                android:id="@+id/text_disable_ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:clickable="false"
+                android:focusable="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                android:text="@string/pref_settings_3_title" />
+
+            <TextView
+                android:id="@+id/content_disable_ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:clickable="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                android:text="@string/pref_settings_3_description" />
+
+        </LinearLayout>
+
+</LinearLayout>

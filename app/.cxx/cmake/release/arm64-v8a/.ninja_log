@@ -1,0 +1,6 @@
+# ninja log v5
+1	82	1593147531	CMakeFiles/keys.dir/keys.c.o	123bb5be98cec79c
+82	140	1593147531	/Users/kmikheev/StudioProjects/gibdd-checker/app/build/intermediates/cmake/release/obj/arm64-v8a/libkeys.so	d8badcaecd0e67d5
+0	15	0	clean	63ac4b29a133e79b
+0	94	1593800509	CMakeFiles/keys.dir/keys.c.o	123bb5be98cec79c
+94	191	1593800510	/Users/kmikheev/StudioProjects/gibdd-checker/app/build/intermediates/cmake/release/obj/arm64-v8a/libkeys.so	d8badcaecd0e67d5

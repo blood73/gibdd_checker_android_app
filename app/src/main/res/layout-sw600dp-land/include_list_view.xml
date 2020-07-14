@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.quote.ListActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:divider="@drawable/divider"
+        android:orientation="horizontal"
+        android:showDividers="middle"
+        tools:context=".ui.quote.ListActivity"
+        android:baselineAligned="false">
+
+        <fragment
+            android:id="@+id/article_list"
+            android:name="ru.bloodsoft.gibddchecker.ui.quote.ArticleListFragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            tools:layout="@android:layout/list_content"/>
+
+        <FrameLayout
+            android:id="@+id/article_detail_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"/>
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_alignBottom="@+id/root_layout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-3078563819949367/7220951180">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
+

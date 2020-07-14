@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ru.bloodsoft.gibddchecker.ui.recycler_views.EmptyRecyclerView
+            android:id="@+id/reports_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/report_item_row"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:textAlignment="center">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:padding="16dp"
+            android:text="@string/report_empty"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+        <Button
+            android:id="@+id/new_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical|center"
+            android:text="@string/report_try"
+            android:theme="@style/Button" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

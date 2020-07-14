@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_gibdd"
+            android:icon="@drawable/ic_traffic_black_24dp"
+            android:title="@string/navigation_quotes" />
+
+        <item
+            android:id="@+id/nav_full_report"
+            android:icon="@drawable/baseline_search_black_24"
+            android:title="@string/navigation_full_report" />
+
+        <item
+            android:id="@+id/nav_my_reports"
+            android:icon="@drawable/baseline_folder_black_24"
+            android:title="@string/navigation_my_reports" />
+
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_history_black_24dp"
+            android:title="@string/navigation_history" />
+
+        <item
+            android:id="@+id/nav_phone"
+            android:icon="@drawable/ic_phone_black_24dp"
+            android:title="@string/navigation_phone" />
+
+        <item
+            android:id="@+id/nav_plate"
+            android:icon="@drawable/ic_motorcycle_black_24dp"
+            android:title="@string/navigation_plate" />
+
+        <item
+            android:id="@+id/nav_insurance"
+            android:icon="@drawable/ic_receipt_black_24dp"
+            android:title="@string/navigation_insurance" />
+
+        <item
+            android:id="@+id/nav_polis"
+            android:icon="@drawable/ic_insert_drive_file_black_24dp"
+            android:title="@string/navigation_polis" />
+
+        <item
+            android:id="@+id/nav_reestr"
+            android:icon="@drawable/ic_account_balance_black_24dp"
+            android:title="@string/navigation_reestr" />
+
+        <item
+            android:id="@+id/nav_eaisto"
+            android:icon="@drawable/ic_airport_shuttle_black_24dp"
+            android:title="@string/navigation_eaisto" />
+
+        <item
+            android:id="@+id/nav_fssp"
+            android:icon="@drawable/ic_domain_black_24dp"
+            android:title="@string/navigation_fssp" />
+
+        <item
+            android:id="@+id/nav_fines"
+            android:icon="@drawable/ic_healing_black_24dp"
+            android:title="@string/navigation_fines" />
+
+        <!--item
+            android:id="@+id/nav_decoder"
+            android:icon="@drawable/ic_find_in_page_black_24dp"
+            android:title="@string/navigation_decoder" /-->
+
+        <item
+            android:id="@+id/nav_mileage"
+            android:icon="@drawable/ic_directions_car_black_24dp"
+            android:title="@string/navigation_mileage" />
+
+        <item
+            android:id="@+id/nav_mileage_inapp"
+            android:icon="@drawable/ic_attach_money_black_24dp"
+            android:title="@string/navigation_mileage_inapp" />
+
+    </group>
+
+    <group
+        android:id="@+id/perekup"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/perekup_1"
+            android:icon="@drawable/ic_description_black_24dp_ad1"
+            android:title="@string/perekup_1" />
+
+        <item
+            android:id="@+id/perekup_2"
+            android:icon="@drawable/ic_description_black_24dp_ad1"
+            android:title="@string/perekup_2" />
+
+        <item
+            android:id="@+id/perekup_3"
+            android:icon="@drawable/ic_description_black_24dp_ad1"
+            android:title="@string/perekup_3" />
+
+        <item
+            android:id="@+id/sravni"
+            android:icon="@drawable/ic_description_black_24dp_ad1"
+            android:title="@string/sravni_1" />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_vk"
+            android:icon="@drawable/ic_forum"
+            android:title="@string/navigation_vk" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_action_settings"
+            android:title="@string/navigation_settings" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info_black_24dp"
+            android:title="@string/navigation_about" />
+
+        <item
+            android:id="@+id/nav_example_report"
+            android:icon="@drawable/ic_info_black_24dp"
+            android:title="@string/report_example" />
+
+    </group>
+</menu>

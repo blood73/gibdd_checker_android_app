@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    cardview:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/auto"
+            android:layout_width="fill_parent"
+            android:layout_height="225dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/phone_auto_photo"
+            android:src="@drawable/no_image_auto" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="16dp"
+            android:stretchColumns="1">
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height = "0dp"
+                android:layout_weight = "1"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="@string/plate_make"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/make"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"/>
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height = "0dp"
+                android:layout_weight = "1"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="@string/plate_model"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/model"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"/>
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height = "0dp"
+                android:layout_weight = "1"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="@string/plate_date"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"/>
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+                <Button
+                    android:id="@+id/open_url"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/plate_url"
+                    android:theme="@style/BorderlessButton" />
+
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

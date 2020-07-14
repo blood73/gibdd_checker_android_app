@@ -1,0 +1,3 @@
+/Users/kmikheev/StudioProjects/gibdd-checker/app/.cxx/cmake/compileOptions/x86/CMakeFiles/rebuild_cache.dir
+/Users/kmikheev/StudioProjects/gibdd-checker/app/.cxx/cmake/compileOptions/x86/CMakeFiles/edit_cache.dir
+/Users/kmikheev/StudioProjects/gibdd-checker/app/.cxx/cmake/compileOptions/x86/CMakeFiles/keys.dir

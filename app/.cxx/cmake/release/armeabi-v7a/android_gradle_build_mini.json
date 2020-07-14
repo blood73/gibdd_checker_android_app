@@ -1,0 +1,19 @@
+{
+  "buildFiles": [
+    "/Users/kmikheev/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
+    "/Users/kmikheev/StudioProjects/gibdd-checker/app/src/main/jni/CMakeLists.txt",
+    "/Users/kmikheev/Library/Android/sdk/ndk/21.1.6352462/build/cmake/platforms.cmake"
+  ],
+  "cleanCommands": [
+    "/Users/kmikheev/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/kmikheev/StudioProjects/gibdd-checker/app/.cxx/cmake/release/armeabi-v7a\" clean"
+  ],
+  "buildTargetsCommand": "/Users/kmikheev/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/kmikheev/StudioProjects/gibdd-checker/app/.cxx/cmake/release/armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "keys-Release-armeabi-v7a": {
+      "artifactName": "keys",
+      "buildCommand": "/Users/kmikheev/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/kmikheev/StudioProjects/gibdd-checker/app/.cxx/cmake/release/armeabi-v7a\" keys",
+      "abi": "armeabi-v7a",
+      "output": "/Users/kmikheev/StudioProjects/gibdd-checker/app/build/intermediates/cmake/release/obj/armeabi-v7a/libkeys.so"
+    }
+  }
+}

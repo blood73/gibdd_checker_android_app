@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mask="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/samples_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/samples_fab"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/samples_main2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/samples_fab"
+                android:orientation="vertical"
+                android:padding="@dimen/regular_offset">
+
+                <TextView
+                    android:id="@+id/fssp_title"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fssp_title" />
+
+                <TextView
+                    android:id="@+id/fssp_subhead"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/fssp_subhead" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:stretchColumns="0">
+
+                    <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/fssp_region"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/fssp_region"
+                            android:spinnerMode="dropdown" />
+
+                    </TableRow>
+
+                    <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <org.droidparts.widget.ClearableEditText
+                            android:id="@+id/fssp_lastname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableRight="@drawable/cross"
+                            android:hint="@string/fssp_lastname"
+                            android:maxLines="1" />
+
+                        <ImageView
+                            android:id="@+id/paste1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_content_paste_black_24dp" />
+
+                    </TableRow>
+
+                    <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <org.droidparts.widget.ClearableEditText
+                            android:id="@+id/fssp_firstname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableRight="@drawable/cross"
+                            android:hint="@string/fssp_firstname"
+                            android:maxLines="1" />
+
+                        <ImageView
+                            android:id="@+id/paste2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_content_paste_black_24dp" />
+
+                    </TableRow>
+
+                    <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <org.droidparts.widget.ClearableEditText
+                            android:id="@+id/fssp_patronymic"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableRight="@drawable/cross"
+                            android:hint="@string/fssp_patronymic"
+                            android:maxLines="1" />
+
+                        <ImageView
+                            android:id="@+id/paste3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_content_paste_black_24dp" />
+
+                    </TableRow>
+
+                    <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <br.com.sapereaude.maskedEditText.MaskedEditText
+                            android:id="@+id/fssp_dob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.Medium"
+                            android:typeface="normal"
+                            android:hint="@string/fssp_dob"
+                            app:keep_hint="true"
+                            android:inputType="date"
+                            mask:allowed_chars="1234567890"
+                            mask:mask="##.##.####" />
+
+                        <ImageView
+                            android:id="@+id/paste4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_content_paste_black_24dp" />
+
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardAdViewSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin"
+                app:cardElevation="3dp" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardResults"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_margin"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin"
+                android:visibility="gone"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:id="@+id/layout_result"
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/details_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+                    <TextView
+                        android:id="@+id/details_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardAdView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_margin"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin"
+                android:visibility="gone"
+                app:cardElevation="3dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_fssp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="0dp"
+                tools:listitem="@layout/fssp_item_row" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="45dp"
+        android:layout_marginLeft="@dimen/regular_offset"
+        android:layout_marginRight="@dimen/regular_offset"
+        android:src="@drawable/ic_search_white_24dp"
+        app:layout_behavior="ru.bloodsoft.gibddchecker.ui.ScrollingFABBehavior"/>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>request_per_ad</key>
+        <value>2</value>
+    </entry>
+    <entry>
+        <key>request_per_ad_2</key>
+        <value>2</value>
+    </entry>
+    <entry>
+        <key>connection_timeout_ms</key>
+        <value>30000</value>
+    </entry>
+    <entry>
+        <key>rate_app_number_of_days_before_show_dialog</key>
+        <value>3</value>
+    </entry>
+    <entry>
+        <key>show_phone_search</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>show_vin_decoder</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>show_mileage_search</key>
+        <value>true</value>
+    </entry>
+</defaultsMap>

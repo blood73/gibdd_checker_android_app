@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/samples_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/samples_fab"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/samples_main2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/regular_offset">
+
+                <TextView
+                    android:id="@+id/phone_title"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mileage_title" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/mileage_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/card_margin"
+                    android:layout_marginBottom="@dimen/card_margin"
+                    app:cardElevation="3dp">
+
+                    <LinearLayout
+                        style="@style/Widget.CardContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/mileage_count_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                            tools:text="@plurals/mileage_inapp_count" />
+
+                        <Button
+                            android:id="@+id/update_mileage"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|center_vertical"
+                            android:text="@string/update"
+                            android:textColor="@color/theme_primary_accent"
+                            android:theme="@style/BorderlessButton" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginTop="16dp"
+                    android:stretchColumns="0">
+
+                    <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height = "0dp"
+                        android:layout_weight = "1"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <org.droidparts.widget.ClearableEditText
+                            android:drawableRight="@drawable/cross"
+                            android:drawablePadding="12dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/vinNumber"
+                            android:layout_weight="1"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-"
+                            android:hint="@string/vin_decoder_vin"
+                            android:maxLines="1"
+                            android:lines="1"
+                            android:maxLength="17"/>
+
+                        <ImageView
+                            android:id="@+id/paste"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_content_paste_black_24dp" />
+
+                    </TableRow>
+
+                </TableLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardResults"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_margin"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin"
+                android:visibility="gone"
+                tools:visibility="visible"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:id="@+id/layout_result"
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/details_header"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        tools:text="@string/mileage_success" />
+
+                    <TextView
+                        android:id="@+id/details_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        tools:text="@string/mileage_km" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_mileage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/mileage_item_row"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="0dp"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginLeft="@dimen/regular_offset"
+        android:layout_marginRight="@dimen/regular_offset"
+        android:layout_marginBottom="45dp"
+        android:src="@drawable/ic_search_white_24dp"
+        app:layout_behavior="ru.bloodsoft.gibddchecker.ui.ScrollingFABBehavior" />
+
+</android.support.design.widget.CoordinatorLayout>

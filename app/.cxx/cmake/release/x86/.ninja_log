@@ -1,0 +1,6 @@
+# ninja log v5
+1	55	1593147531	CMakeFiles/keys.dir/keys.c.o	3a70a5e43eed54fb
+55	81	1593147532	/Users/kmikheev/StudioProjects/gibdd-checker/app/build/intermediates/cmake/release/obj/x86/libkeys.so	216ae1b868bbd790
+0	14	0	clean	63ac4b29a133e79b
+0	100	1593800510	CMakeFiles/keys.dir/keys.c.o	3a70a5e43eed54fb
+100	199	1593800510	/Users/kmikheev/StudioProjects/gibdd-checker/app/build/intermediates/cmake/release/obj/x86/libkeys.so	216ae1b868bbd790

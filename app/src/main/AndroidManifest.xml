@@ -1,0 +1,203 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ru.bloodsoft.gibddchecker"
+    android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="com.google.android.providers.gsf.permisson.READ_GSERVICES"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.WRITE_GSERVICES"/>
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Main"
+        android:usesCleartextTraffic="true">
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
+        <receiver android:name=".SilentPushReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="ru.bloodsoft.gibddchecker.action.SILENT_PUSH_RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".FirebaseMessagingMasterService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter android:priority="100" >
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.yandex.metrica.push.firebase.MetricaMessagingService" tools:node="remove" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3078563819949367~1340629934"/>
+
+        <service
+            android:name=".util.GibbddFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <!-- Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_stat_name" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/theme_primary_light" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <meta-data android:name="android.max_aspect" android:value="2.1" />
+
+        <activity
+            android:name=".ui.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="ru.bloodsoft.gibddchecker.ui.IntroActivity"
+            android:label="" />
+
+        <activity android:name=".ui.quote.ListActivity" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.quote.ArticleDetailActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:label=""
+            android:parentActivityName=".ui.quote.ListActivity"/>
+        <activity android:name=".ui.HistoryActivity"
+            android:label="@string/navigation_history"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName=".ui.quote.ListActivity"/>
+        <activity android:name=".ui.PhoneActivity"
+            android:label="@string/navigation_phone"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName=".ui.quote.ListActivity"/>
+        <activity android:name=".ui.PlateActivity"
+            android:label="@string/navigation_plate"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName=".ui.quote.ListActivity"/>
+        <activity android:name=".ui.InsuranceActivity"
+            android:label="@string/navigation_insurance"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName=".ui.quote.ListActivity"/>
+        <activity android:name=".ui.PolisActivity"
+            android:label="@string/navigation_polis"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName=".ui.quote.ListActivity"/>
+        <activity android:name=".ui.ReestrActivity"
+            android:label="@string/navigation_reestr"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName=".ui.quote.ListActivity"/>
+        <activity android:name=".ui.EaistoActivity"
+            android:label="@string/navigation_eaisto"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName=".ui.quote.ListActivity"/>
+        <activity android:name=".ui.FsspActivity"
+            android:label="@string/navigation_fssp"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName=".ui.quote.ListActivity"/>
+        <activity android:name=".ui.FinesActivity"
+            android:label="@string/navigation_fines"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName=".ui.quote.ListActivity"/>
+        <activity android:name=".ui.MileageActivity"
+            android:label="@string/navigation_mileage"
+            android:windowSoftInputMode="stateHidden"
+            android:exported="true"
+            android:parentActivityName=".ui.quote.ListActivity"/>
+        <activity android:name=".ui.MileageInappActivity"
+            android:label="@string/navigation_mileage_inapp"
+            android:windowSoftInputMode="stateHidden"
+            android:exported="true"
+            android:parentActivityName=".ui.quote.ListActivity"/>
+        <activity android:name=".ui.TOActivity"
+            android:label="@string/to_title"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName=".ui.quote.ListActivity"
+            android:theme="@style/Theme.Main"/>
+        <activity android:name=".ui.SravniAct"
+            android:label="@string/sravni_1"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName=".ui.quote.ListActivity"
+            android:theme="@style/Theme.Main"/>
+        <activity android:name=".ui.PerekupAct1"
+            android:label="@string/perekup_1"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName=".ui.quote.ListActivity"
+            android:theme="@style/Theme.Main"/>
+        <activity android:name=".ui.PerekupAct2"
+            android:label="@string/perekup_2"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName=".ui.quote.ListActivity"
+            android:theme="@style/Theme.Main"/>
+        <activity android:name=".ui.PerekupAct3"
+            android:label="@string/perekup_3"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName=".ui.quote.ListActivity"
+            android:theme="@style/Theme.Main"/>
+        <activity android:name=".ui.SettingsActivity"
+            android:label="Настройки"
+            android:parentActivityName=".ui.quote.ListActivity"/>
+        <activity android:name=".ui.AboutActivity"
+            android:label="О приложении"
+            android:parentActivityName=".ui.quote.ListActivity"/>
+        <activity android:name=".ui.MyReportsActivity"
+            android:label="@string/navigation_my_reports"
+            android:windowSoftInputMode="stateHidden"
+            android:exported="true"
+            android:parentActivityName=".ui.quote.ListActivity"/>
+        <activity android:name=".ui.FullReportActivity"
+            android:label="@string/navigation_full_report"
+            android:windowSoftInputMode="stateHidden"
+            android:exported="true"
+            android:parentActivityName=".ui.quote.ListActivity"/>
+        <activity android:name=".ui.ExampleReportActivity"
+            android:label="@string/report_example"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName=".ui.quote.ListActivity"
+            android:theme="@style/Theme.Main"/>
+
+        <activity android:name=".ui.AutospotAct"
+            android:label="Оформить ОСАГО"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName=".ui.quote.ListActivity"
+            android:theme="@style/Theme.Main"/>
+
+        <activity android:name=".ui.ShtrafiOnline"
+            android:label="Штрафы"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName=".ui.quote.ListActivity"
+            android:theme="@style/Theme.Main"/>
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            tools:replace="android:theme"/>
+    </application>
+
+</manifest>

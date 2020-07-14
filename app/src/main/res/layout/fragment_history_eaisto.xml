@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ru.bloodsoft.gibddchecker.ui.recycler_views.EmptyRecyclerView
+        android:id="@+id/history_eaisto_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:id="@+id/ensurance_eaisto_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:textAlignment="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:padding="16dp"
+            android:text="@string/empty_history"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+    </LinearLayout>
+
+</RelativeLayout>

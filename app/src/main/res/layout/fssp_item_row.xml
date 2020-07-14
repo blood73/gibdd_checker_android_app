@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    cardview:cardUseCompatPadding="true">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="16dp"
+        android:stretchColumns="1">
+
+        <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height = "0dp"
+            android:layout_weight = "1"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/fssp_name"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fssp_name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right"/>
+        </TableRow>
+
+        <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height = "0dp"
+            android:layout_weight = "1"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/fssp_exe_production"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fssp_exe_production"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right"/>
+        </TableRow>
+
+        <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height = "0dp"
+            android:layout_weight = "1"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/fssp_details"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fssp_details"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right"/>
+        </TableRow>
+
+        <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height = "0dp"
+            android:layout_weight = "1"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/fssp_subject"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fssp_subject"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right"/>
+        </TableRow>
+
+        <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height = "0dp"
+            android:layout_weight = "1"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/fssp_department"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fssp_department"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right"/>
+        </TableRow>
+
+        <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height = "0dp"
+            android:layout_weight = "1"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/fssp_bailiff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fssp_bailiff"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right"/>
+        </TableRow>
+    </TableLayout>
+</android.support.v7.widget.CardView>

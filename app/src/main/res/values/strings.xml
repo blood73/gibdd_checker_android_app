@@ -1,0 +1,515 @@
+<resources>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="app_name">Проверка Авто. Антиперекуп</string>
+    <string name="settings">Настройки</string>
+    <string name="lorem_ipsum">Тут большой текст</string>
+    <string name="article_detail_more_info">Больше информации</string>
+    <string name="insurance_title">Проверка полиса ОСАГО</string>
+    <string name="insurance_subhead">Вы можете проверить полис ОСАГО по его номеру</string>
+    <string name="insurance_series">Серия полиса</string>
+    <string name="insurance_number">Номер полиса</string>
+    <string name="hint_vin">VIN код автомобиля</string>
+    <string name="navigation_title">Проверка авто</string>
+    <string name="navigation_title2">Антиперекуп</string>
+    <string name="navigation_quotes">ГИБДД</string>
+    <string name="navigation_history">История проверок</string>
+    <string name="navigation_insurance">Проверка страховки</string>
+    <string name="navigation_polis">Поиск страховки</string>
+    <string name="navigation_reestr">Реестр залогов</string>
+    <string name="navigation_eaisto">Поиск тех. осмотра</string>
+    <string name="navigation_fssp">Проверка продавца в ФССП</string>
+    <string name="navigation_vk">Мы Вконтакте</string>
+    <string name="navigation_settings">Настройки</string>
+    <string name="navigation_about">О приложении</string>
+    <string name="navigation_ad">Реклама</string>
+    <string name="navigation_help_project">Помощь проекту</string>
+    <string name="navigation_price">Реклама в приложении</string>
+    <string name="navigation_phone">Поиск по номеру телефона</string>
+    <string name="navigation_plate">Поиск по номеру авто</string>
+    <string name="navigation_fines">Проверка штрафов</string>
+    <string name="navigation_decoder">Расшифровка VIN</string>
+    <string name="navigation_mileage">Пробег авто</string>
+    <string name="navigation_mileage_inapp">Оплатить запросы</string>
+    <string name="navigation_my_reports">Мои отчеты</string>
+    <string name="navigation_full_report">Полный отчет</string>
+    <string name="loading">Загрузка &#8230;</string>
+    <string name="cancelled">Отменено</string>
+    <string name="enter_captcha">Введите символы</string>
+    <string name="captcha_ok">Отправить</string>
+    <string name="captcha_cancel">Отмена</string>
+    <string name="captcha">Код с картинки</string>
+    <string name="error_empty_vin">Вы не ввели VIN код</string>
+    <string name="error_empty_request">Вы не ввели данные</string>
+    <string name="error_empty_phone">Вы не ввели номер телефона</string>
+    <string name="error_all_inputs_required">Все поля обязательны</string>
+    <string name="error_empty_captcha_code">Введите код с картинки</string>
+    <string name="error_no_internet">Проверьте свое интернет соединение</string>
+    <string name="error_no_captcha">Извините, проблемы с доступностью сайта ГИБДД</string>
+    <string name="error_no_captcha_general">Извините, проблемы с доступностью источника данных</string>
+    <string name="error">Ошибка</string>
+    <string name="error_details">Сервер ГИБДД недоступен. Пожалуйста, попробуйте позже</string>
+    <string name="error_no_inapp_mileage">У Вас нет оплаченных запросов</string>
+    <string name="warning">Внимание</string>
+    <string name="warning_found_2">Найдено количество записей об авариях: %1$s</string>
+    <string name="warning_found_3">Найдено количество записей о розыске: %1$s</string>
+    <string name="warning_found_4">Найдено количество записей об ограничениях: %1$s</string>
+    <string name="warning_error">Проверка завершилась ошибкой со стороны сервера ГИБДД. Пожалуйста, попробуйте выполнить поиск позднее</string>
+    <string name="notice">Результат запроса:</string>
+    <string name="notice_2">Записи об авариях в базе ГИБДД не найдены</string>
+    <string name="notice_3">Записи о розыске в базе ГИБДД не найдены</string>
+    <string name="notice_4">Записи об ограничениях в базе ГИБДД не найдены</string>
+    <string name="notice_fines">Штрафы не найдены</string>
+    <string name="reg_inic">Регион:</string>
+    <string name="model">Модель ТС:</string>
+    <string name="data_pu">Дата:</string>
+    <string name="god_vyp">Год выпуска ТС:</string>
+    <string name="twice_back_button_pressed_warning">Нажмите еще раз для выхода</string>
+    <string name="rate_app_title">Нравится приложение?</string>
+    <string name="rate_app_later">Позже</string>
+    <string name="rate_app_never">Никогда</string>
+    <string name="rate_app_confirmation_title">Спасибо за высокую оценку!</string>
+    <string name="rate_app_confirmation_description">Пожалуйста, поставьте оценку в Play Market. Это очень поможет развитию приложения</string>
+    <string name="rate_app_dialog_positive_button">Конечно!</string>
+    <string name="rate_app_dialog_negative_button">Нет</string>
+    <string name="rate_app_feedback_title">Нам очень жаль</string>
+    <string name="rate_app_feedback_description">Расскажите, что Вам не понравилось. Мы исправимся для Вас!</string>
+    <string name="rate_app_feedback_send">Отправить</string>
+    <string name="rate_app_feedback_sent">Отправка отзыва через почтовый клиент &#8230;</string>
+    <string name="person_type">Тип владельца:</string>
+    <string name="from">c:\u0020</string>
+    <string name="to">по:\u0020</string>
+    <string name="date_now">\u0020наст. время</string>
+    <string name="date_restricted">\u0020н/д</string>
+    <string name="person_natural">Физическое лицо</string>
+    <string name="person_legal">Юридическое лицо</string>
+    <string name="warning_not_found_1">Информация о владельцах не найдена</string>
+    <string name="warning_not_found_2">Информация об авариях не найдена</string>
+    <string name="vehicle_passport">Сведения о ПТС:</string>
+    <string name="vehicle_passport_number">Номер ПТС:</string>
+    <string name="vehicle_passport_issue">Выдан:</string>
+    <string name="vehicle_details">Сведения об автомобиле:</string>
+    <string name="vehicle_model">Марка, модель:</string>
+    <string name="vehicle_year">Год выпуска:</string>
+    <string name="vehicle_vin">VIN:</string>
+    <string name="vehicle_body_number">Кузов:</string>
+    <string name="vehicle_chassis_number">Шасси:</string>
+    <string name="vehicle_color">Цвет:</string>
+    <string name="vehicle_engine_volume">Рабочий объем (см³):</string>
+    <string name="vehicle_engine_power">Мощность (кВт/л.с.):</string>
+    <string name="vehicle_category">Категория:</string>
+    <string name="vehicle_type">Тип:</string>
+    <string name="accident_model">Модель:</string>
+    <string name="accident_mark">Марка:</string>
+    <string name="accident_damage_state">Состояние ТС:</string>
+    <string name="accident_region_name">Регион:</string>
+    <string name="accident_time">Время:</string>
+    <string name="accident_number">№ происшествия:</string>
+    <string name="accident_type">Тип:</string>
+    <string name="accident_damage_points">Повреждения:</string>
+    <string name="restricted_model">Модель:</string>
+    <string name="restricted_region">Регион:</string>
+    <string name="restricted_date">Дата ограничения:</string>
+    <string name="restricted_ogrkod">Вид ограничения:</string>
+    <string name="restricted_divtype">Кем установлено:</string>
+    <string name="restricted_phone">Телефон для связи:</string>
+    <string name="restricted_osn_ogr">Основание:</string>
+    <string name="error_404">Информация по указанному VIN не может быть предоставлена</string>
+    <string name="error_403">По указанному VIN не найдена информация о регистрации транспортного средства</string>
+    <string-array name="insurance_series_array">
+        <item>ХХХ</item>
+        <item>ССС</item>
+        <item>ЕЕЕ</item>
+        <item>ВВВ</item>
+        <item>МММ</item>
+        <item>ККК</item>
+    </string-array>
+    <string name="error_empty_insurance">Вы не ввели номер полиса</string>
+    <string name="insurance_details">Сведения о полисе ОСАГО:</string>
+    <string name="insurance_name">Страховщик:</string>
+    <string name="insurance_license_plate">Гос знак:</string>
+    <string name="insurance_vin">VIN:</string>
+    <string name="insurance_status">Статус договора ОСАГО:</string>
+    <string name="insurance_error_captcha">Неправильно введен код с картинки</string>
+    <string name="insurance_error">Сервис недоступен. Пожалуйста, попробуйте позже</string>
+    <string name="insurance_info">Сведения предоставлены сервисом РСА</string>
+    <string name="reestr_info">Сведения предоставлены сервисом федеральной нотариальной палаты</string>
+    <string name="reestr_title">Проверка автомобиля по VIN коду</string>
+    <string name="reestr_subhead">Вы можете проверить автомобиль на наличие в базе данных залогов. Внимание! VIN код может содержать только цифры и английские буквы.</string>
+    <string name="reestr_vin">VIN код автомобиля</string>
+    <string name="reestr_error">Найдены данные по залогу автомобиля</string>
+    <string name="reestr_notice">Данные в реестре не найдены</string>
+    <string name="reestr_notice_header">Успешно</string>
+    <string name="reestr_error_captcha">Неправильно введен код с картинки</string>
+    <string name="button_share">Поделиться</string>
+    <string name="button_rate">Оценить</string>
+    <string name="share_text">Я использую это приложение для проверки автомобиля</string>
+    <string name="share_text_choose">Выберите как поделиться</string>
+    <string name="about_app">Приложение, которое поможет Вам проверить информацию об автомобиле и продавце перед покупкой. \n\nИспользуются данные сторонних сервисов. \n\nМы не собираем любую введенную Вами информацию.
+    </string>
+    <string name="version">Версия:&#160;&#160;</string>
+    <string name="eaisto_info">Сведения предоставлены сервисом ЕАИСТО</string>
+    <string name="eaisto_title">Проверка автомобиля в системе ЕАИСТО</string>
+    <string name="eaisto_subhead">Достаточно указать один из параметров. Внимание! VIN код может содержать только цифры и английские буквы.</string>
+    <string name="eaisto_vin">VIN</string>
+    <string name="eaisto_body_number">Номер кузова</string>
+    <string name="eaisto_frame_number">Номер шасси</string>
+    <string name="eaisto_reg_number">Госномер ТС</string>
+    <string name="eaisto_card_number">№ карты</string>
+    <string name="eaisto_model">Модель ТС</string>
+    <string name="eaisto_date_from">Время регистрации</string>
+    <string name="eaisto_date_to">Действует до</string>
+    <string name="eaisto_operator">Оператор ТО</string>
+    <string name="eaisto_error_empty_fields">Вы ничего не ввели</string>
+    <string name="eaisto_error_details">Сервис недоступен. Пожалуйста, попробуйте позже</string>
+    <string name="eaisto_warning_not_found">Информация о ТО не найдена</string>
+    <string name="mileage_error_details">Сервис недоступен. Пожалуйста, попробуйте позже</string>
+    <string name="mileage_warning_not_found">Информация о пробеге не найдена</string>
+    <string name="polis_warning_not_found">Активных полисов не найдено</string>
+    <string name="phone_warning_not_found">Объявления не найдены</string>
+    <string name="history_vin">VIN</string>
+    <string name="history_insurance">Проверка страховки</string>
+    <string name="history_polis">Поиск страховки</string>
+    <string name="history_eaisto">Тех. осмотр</string>
+    <string name="history_fssp">ФССП</string>
+    <string name="history_phone">Номера телефонов</string>
+    <string name="history_plate">Гос. номера</string>
+    <string name="history_fines">Штрафы</string>
+    <string name="history_mileage">Пробег</string>
+    <string name="empty_history">Вы еще ничего не проверяли. Возвращайтесь позже :)</string>
+    <string name="delete">Удалить</string>
+    <string name="next_check_dtp">Нажмите здесь для проверки этого автомобиля на участие в ДТП</string>
+    <string name="next_check_wanted">Нажмите здесь для проверки этого автомобиля на нахождение в розыске</string>
+    <string name="next_check_restricted">Нажмите здесь для проверки этого автомобиля на наличие ограничений на регистрационные действия</string>
+    <string name="next_check_reestr">Нажмите здесь для проверки этого автомобиля на нахождение в реестре залогов</string>
+    <string name="next_check_eaisto">Нажмите здесь для поиска данных о тех. осмотре</string>
+    <string name="next_check_polis">Нажмите здесь для поиска данных об активных полисах ОСАГО</string>
+    <string name="next_check_gibdd">Нажмите здесь для просмотра истории регистрации в базе ГИБДД</string>
+    <string name="next_check_report">Нажмите здесь для получения полного отчета по автомобилю</string>
+    <string name="next_check_decoder">Нажмите здесь для расшифровки VIN</string>
+    <string name="list_activity_native_ad_unit_id">ca-app-pub-3078563819949367/5770829534</string>
+    <string name="list_activity_native_test_ad_unit_id">ca-app-pub-3940256099942544/1072772517</string>
+    <string name="after_search_ad_unit_id">ca-app-pub-3078563819949367/7612332739</string>
+    <string name="history_clear">История очищена</string>
+    <string name="open_in_browser">Открыть в браузере</string>
+    <string name="fssp_title">Поиск в базе данных исполнительных производств</string>
+    <string name="fssp_subhead">Необходимо указать все параметры ниже</string>
+    <string name="fssp_region">Регион РФ</string>
+    <string name="fssp_lastname">Фамилия</string>
+    <string name="fssp_firstname">Имя</string>
+    <string name="fssp_patronymic">Отчество</string>
+    <string name="fssp_dob">ДДММГГГГ</string>
+    <string name="fssp_dob_text">Дата рождения</string>
+    <string name="fssp_name">Должник:</string>
+    <string name="fssp_exe_production">Исполнительное производство:</string>
+    <string name="fssp_details">Реквизиты исполнительного документа:</string>
+    <string name="fssp_subject">Предмет исполнения, сумма непогашенной задолженности:</string>
+    <string name="fssp_department">Отдел судебных приставов:</string>
+    <string name="fssp_bailiff">Судебный пристав-исполнитель:</string>
+    <string name="fssp_error_details">При разборе ответа от ФССП произошла ошибка. Пожалуйста, попробуйте позже</string>
+    <string name="reestr_error_details">При разборе ответа от Реестра залогов произошла ошибка. Пожалуйста, попробуйте позже</string>
+    <string name="fssp_notice_not_found">Информация о задолженностях не найдена</string>
+    <string name="fssp_warning_found">Найдена информация о задолженностях</string>
+    <string name="reestr_warning_found">Найдена информация о залогах. Советуем проверить через сайт реестра залогов. Возможно, что автомобиль уже исключен из реестра</string>
+    <string name="phone_title">Поиск объявлений авто по номеру телефона</string>
+    <string name="phone_subhead">Поможет найти продавцов перекупщиков. Поиск выполняется по всем популярным рекламным площадкам</string>
+    <string name="vin_decoder_title">Данный сервис позволяет расшифровать VIN код. Работает в тестовом режиме. Возможны проблемы при работе</string>
+    <string name="phone">Номер телефона</string>
+    <string name="phone_car_name">Авто:</string>
+    <string name="phone_date">Дата:</string>
+    <string name="phone_region">Регион:</string>
+    <string name="phone_price">Цена:</string>
+    <string name="phone_mileage">Пробег:</string>
+    <string name="phone_source">Источник:</string>
+    <string name="phone_year">Год:</string>
+    <string name="phone_error_details">Сервис недоступен. Пожалуйста, попробуйте позже</string>
+    <string name="fines_error_details">Не найдены данные о регистрации ТС. Проверьте введенные данные</string>
+    <string name="phone_warning_found">Найдено объявлений: %1$s</string>
+    <string name="phone_auto_photo">Фото</string>
+    <string name="copy_vin">Скопировать VIN</string>
+    <string name="copy_regnumber">Скопировать Гос. номер</string>
+    <string name="skip_button">Пропустить</string>
+    <string name="done_button">Готово</string>
+    <string name="reestr_reg_date">Дата регистрации:</string>
+    <string name="reestr_reg_info_text">Имущество:</string>
+    <string name="reestr_pledgor">Залогодатель:</string>
+    <string name="reestr_mortgagees">Залогодержатель:</string>
+    <string name="polis_serial">Серия:</string>
+    <string name="polis_number">Номер:</string>
+    <string name="polis_company">Страховая компания:</string>
+    <string name="polis_restricted">Ограничение лиц:</string>
+    <string name="polis_restricted_no">Без ограничения</string>
+    <string name="polis_restricted_yes">С ограничениями</string>
+    <string name="polis_title">Поиск страховки в базе РСА</string>
+    <string name="polis_subhead">Достаточно указать один из параметров. Внимание! VIN код может содержать только цифры и английские буквы.</string>
+    <string name="inapp_success">Спасибо за покупку!</string>
+    <string name="inapp_error">Произошла ошибка :(</string>
+    <string name="inapp_owner">У Вас уже версия без рекламы</string>
+    <string name="inapp_already">У Вас версия без рекламы</string>
+    <string name="inapp_thanks">Спасибо за поддержку проекта :)</string>
+    <string name="app_support">Написать нам</string>
+    <string name="history_details">Детали регистрации</string>
+    <string name="history_details_button">Подробнее</string>
+    <string name="plate_title">Поиск VIN по гос.номеру авто</string>
+    <string name="plate_subhead">Поможет узнать VIN автомобиля для следующих поисков.</string>
+    <string name="plate_subhead2">Не существует 100% способа поиска VIN кода по гос.номеру. \n\nВозможны ошибки в выдаче</string>
+    <string name="plate_number">А777АА777</string>
+    <string name="error_empty_plate">Вы не ввели номер авто</string>
+    <string name="plate_make">Марка:</string>
+    <string name="plate_model">Модель:</string>
+    <string name="plate_date">Дата:</string>
+    <string name="plate_url">Открыть в браузере</string>
+    <string name="plate_not_found">Нет фотографий</string>
+    <string name="plate_photo_header">Нажмите, чтобы перейти на сайт http://avto-nomer.ru</string>
+    <string name="plate_photo">Номер</string>
+    <string name="plate_photo_results">Найдены фотографии</string>
+    <string name="vin_found">Найден VIN код</string>
+    <string name="vin_found_text">VIN: %1$s</string>
+    <string name="vin_not_found">VIN код не найден\n\nВозможные причины:\n1. У автомобиля нет тех.осмотра\n2.У автомобиля нет страховки\n3.В страховку не вписан госномер\n4.В базе есть только старый гос.номер\n5.Проблема в базе данных</string>
+    <string name="vin_copy">Скопировать</string>
+    <string name="polis_copy">Скопировать № полиса</string>
+    <string name="phone_details_button">Текст объявления</string>
+    <string name="phone_details_button_header">Текст объявления</string>
+    <string name="phone_details_no_info">Нет данных</string>
+    <string name="fines_title">Проверка штрафов</string>
+    <string name="fines_subhead">Вы можете узнать штрафы продавца по гос.номеру и номеру свидетельства о регистрации ТС</string>
+    <string name="fines_regnumber">Гос. номер</string>
+    <string name="fines_stsnumber">Номер СТС</string>
+    <string name="fines_date">Дата:</string>
+    <string name="fines_addr">Место:</string>
+    <string name="fines_koap">Статья КоАП РФ:</string>
+    <string name="fines_divid">Код подразделения:</string>
+    <string name="fines_sum">Сумма штрафа:</string>
+    <string name="fines_rub">%1$s руб.</string>
+    <string name="fines_load_image">Фото</string>
+    <string name="fines_open_map">Показать на карте</string>
+    <string name="ad_title">Реклама</string>
+    <string name="to_title">Пройти техосмотр</string>
+    <string name="perekup_1">Срочный выкуп авто</string>
+    <string name="perekup_2">Помощь в подборе авто</string>
+    <string name="perekup_3">При поддержке Перекуп-Клуб</string>
+    <string name="sravni_1">КАСКО со скидкой</string>
+    <string name="reestr_warning">Уважаемые пользователи! \n\nСайт федеральной нотариальной палаты внес изменения, из-за которых в данный момент нет технической возможности отправлять запросы через приложение. \n\nПожалуйста, перейдите на сайт и выполните поиск по VIN коду автомобиля (По информации о предмете залога -> Транспортное средство). \n\nНадеемся на Ваше понимание</string>
+    <string name="reestr_open_site">Проверить на сайте</string>
+    <string name="vin_decoder_dialog_title">Необходимо уточнить параметры</string>
+    <string name="vin_decoder_fail">Возникла проблема при расшифровке VIN. Попробуйте позже</string>
+    <string name="vin_decoder_result">Результаты расшифровки</string>
+    <string name="vin_decoder_make_image">Изображение марки авто</string>
+    <string name="vin_decoder_vin">VIN код автомобиля</string>
+    <string name="vin_incorrect">Неверный VIN? Не найден VIN? Нажмите здесь, чтобы выполнить принудительный поиск по другой базе</string>
+    <string name="open_browser_error">Нет подходящих приложений</string>
+    <string name="button_search">Поиск</string>
+    <string name="button_clear">Очистить</string>
+    <string name="empty_field_text">Заполните все поля</string>
+    <string name="empty_single_filed_text">Заполните дату и любое поле</string>
+    <string name="disabled_captcha">Проверка безопасности не пройдена</string>
+    <string name="policy_checkbox">Я принимаю условия</string>
+    <string name="policy_header">Прочтите и примите пользовательское соглашение</string>
+    <string name="policy_slide_title">Проверьте авто на ДТП</string>
+    <string name="policy_slide_text">Поиск выполняется на официальном сайте ГИБДД</string>
+    <string name="policy_message">Продолжая, Вы принимаете <u>политику конфиденциальности</u></string>
+    <string name="policy_text">1. Какие личные данные мы используем\n\n
+В качестве ваших личных данных мы используем: данные о вашем примерном местоположении, информация о телефоне, введенные данные.\n\n
+2. Для каких целей используются личные данные пользователей\n\n
+- Ваше примерное местоположение необходимо, чтобы мы могли определить, из какого Вы региона. Регион используется для выбора региона по умолчанию при поиске по базе ФССП.\n\n
+- Информация о телефоне используется для сбора и анализа ошибок в приложении. Чтобы информация была более полной, нам необходимо знать марку, модель, версию системы Вашего телефона.\n\n
+- Введенные данные используются для отправки запросов в сторонние сервисы (база ГИБДД, сервис поиска по номеру телефона, ФССП и т.д.). Мы никаким образом не собираем и не храним эту информацию.\n\n
+3. Передача личных данных третьим лицам\n\n
+Мы не передаем ваши личные данные третьим лицам.\n\n
+4. Безопасность личных данных\n\n
+Мы храним и обрабатываем ваши личные данные надежным и безопасным образом. Мы следуем нашим процедурам, принципам и мерам, которые гарантируют конфиденциальность пользователей с учетом требований законодательства. Мы постоянно совершенствуем способы сбора, хранения и обработки ваших личных данных.\n\n
+5. Изменение политики конфиденциальности\n\n
+Мы будем регулярно обновлять нашу Политику конфиденциальности, чтобы информировать вас обо всех изменениях в нашем подходе к обработке ваших личных данных. \n\nПоследнее обновление политики конфиденциальности: 5 июля 2017 года.
+\n\n
+English version:\n\n
+1. What personal information we use\n\n
+As your personal data we use: your location information, phone information, entered data.\n\n
+2. Why do we use your personal data\n\n
+- Your location information is necessary to determine from what region you are. The region is used to select the default region when searching through the Federal Bailiff Service database.\n\n
+- The phone information is used to collect and analyze errors in the application. To make the information more complete, we need to know the brand, model, version of your phone system.\n\n
+- The entered data is used to send the requests to the third-party services (Department of Motor Vehicles base, search by phone number service, Federal Bailiff Service etc). We do not collect or store this information.\n\n
+3. The transfer of personal data to third parties\n\n
+We do not transfer your personal data to third parties.\n\n
+4. Security of personal data\n\n
+We store and process your personal data in a reliable and secure manner. We follow our procedures, principles and measures that guarantee the confidentiality of users in accordance with the requirements of the law. We constantly improve the ways of collecting, storing and processing your personal data.\n\n
+5. Changes in the privacy policy\n\n
+We will regularly update our privacy policy to inform you about the changes in our approach to processing your personal data. The last update: July 5, 2017.
+</string>
+    <string name="button_policy">Политика конфиденциальности</string>
+    <string name="mileage_title">Данный сервис позволяет найти последний пробег, зафиксированный оператором ТО</string>
+    <string name="mileage">Найденный пробег</string>
+    <string name="mileage_km">%1$d км на %2$s</string>
+    <string name="mileage_str">%1$s км на %2$s</string>
+    <string name="mileage_success">Пробег найден</string>
+    <string name="mileage_created_date">Дата:</string>
+    <string name="mileage_source">Источник:</string>
+    <string name="mileage_make">Марка:</string>
+    <string name="mileage_model">Модель:</string>
+    <string name="mileage_city">Город:</string>
+    <string name="mileage_year">Год:</string>
+    <string name="mileage_distance">Пробег:</string>
+    <string name="mileage_price">Цена:</string>
+    <string name="mileage_inapp_header">Поиск пробега автомобиля</string>
+    <string name="mileage_inapp_plus_1">Позволяет узнать последний пробег, зафиксированный оператором ТО</string>
+    <string name="mileage_inapp_plus_2">Покажет пробег из объявлений, при наличии в базе данных</string>
+    <string name="mileage_inapp_plus_3">Не найден пробег? Вы не теряете оплаченный запрос</string>
+    <string name="mileage_inapp_plus_4">Поможет принять окончательное решение о покупке автомобиля</string>
+    <string name="mileage_inapp_request_1">1 запрос</string>
+    <string name="mileage_inapp_request_2">2 запроса</string>
+    <string name="mileage_inapp_request_5">5 запросов</string>
+    <string name="mileage_inapp_request_10">10 запросов</string>
+    <string name="price">%1$d \u20BD</string>
+    <string name="price_report">Купить отчет %1$d \u20BD</string>
+    <string name="discount">Скидка %1$d</string>
+    <string name="buy">Купить</string>
+    <string name="pay">оплатить</string>
+    <string name="thanks_for_buy">Спасибо за покупку :)</string>
+    <string name="no_mileage_requests">У вас нет оплаченных запросов</string>
+    <string name="no_mileage_requests_buy">У вас нет оплаченных запросов. Нажмите, чтобы купить</string>
+    <string name="without_discount">Без скидки</string>
+    <string name="want_to_know_mileage">Хотите узнать пробег?</string>
+    <string name="error_message_send">Во время оплаты произошла ошибка. Нажмите здесь, чтобы написать нам. Мы обязательно поможем</string>
+    <string name="start_rsa_search">Поиск по базе ОСАГО. Поставьте галочку, пройдите капчу</string>
+    <string name="start_rsa_search_2">Найдена страховка. Поиск VIN. Поставьте галочку еще  раз</string>
+    <string name="gibdd_captcha"> Обходим капчу. Ожидайте</string>
+    <string name="no_insurance_rsa_search">Полис ОСАГО по госномеру не найден. Возможно, что госномер не вписан в страховку, либо ошибка в базе. Поиск VIN невозможен</string>
+    <string name="eaisto_no_data">Данные в базе техосмотра не найдены</string>
+    <string name="error_rsa_search">Ошибка. Попробуйте еще раз</string>
+    <string name="plate_warning_title">Уважаемый пользователь!</string>
+    <string name="plate_warning_text">В данный момент наблюдаются технические неполадки с базой техосмотра.\nПроблема не на стороне приложения.\n\nДелаем все возможное, чтобы исправить ситуацию.\n\nНадеемся на Ваше понимание.</string>
+    <string name="eaisto">Техосмотр</string>
+    <string name="updating">Обновление &#8230;</string>
+    <string name="update">Обновить</string>
+    <string name="code_support">Код для техподдержки:\n %1$s</string>
+    <string name="report_number">Номер отчета:</string>
+    <string name="report_status">Статус отчета:</string>
+    <string name="report_added">Добавлен:</string>
+    <string name="report_updated">Обновлен:</string>
+    <string name="report_download">Скачать</string>
+    <string name="report_example">Пример отчета</string>
+    <string name="report_empty">Вы не покупали отчеты по автомобилям. Сегодня самое время, чтобы попробовать ;)</string>
+    <string name="report_cant_open">Мы не смогли найти подходящее приложение, чтобы открыть отчет. Ссылка на файл была скопирована в буфер обмена. Перейдите по ней в вашем браузере</string>
+    <string name="report_try">Попробовать</string>
+    <string name="report_search">Поиск</string>
+    <string name="report_vehicle_header">Отчет по автомобилю</string>
+    <string name="report_vehicle_error">Произошла ошибка при получении данных из ГИБДД. Мы не имеем отношения к их работе. Попробуйте позже</string>
+    <string name="report_success">Отчет добавлен в очередь на создание. Мы сообщим, как он будет готов. Нажмите здесь, чтобы перейти на экран ваших отчетов</string>
+    <string name="report_header">Полный PDF-отчет по автомобилю</string>
+    <string name="report_plus_1">Более 15 источников данных</string>
+    <string name="report_plus_2">Технические характеристики автомобиля</string>
+    <string name="report_plus_3">Данные ПТС</string>
+    <string name="report_plus_4">Количество владельцев</string>
+    <string name="report_plus_5">Тип владельца: физическое/юридическое лицо</string>
+    <string name="report_plus_6">История регистрационных действий</string>
+    <string name="report_plus_7">Все возможные гос.номера с данным VIN кодом автомобиля</string>
+    <string name="report_plus_8">Фотографии автомобиля (если есть)</string>
+    <string name="report_plus_9">Подробная информация о ДТП</string>
+    <string name="report_plus_10">Нахождение в розыске</string>
+    <string name="report_plus_11">Ограничения на регистрацию</string>
+    <string name="report_plus_12">Угон</string>
+    <string name="report_plus_13">Залог в банке</string>
+    <string name="report_plus_14">Судебные постановления на автомобиль (Арбитражный и Верховный суды)</string>
+    <string name="report_plus_15">Проверка на утилизацию</string>
+    <string name="report_plus_16">Наличие полиса ОСАГО</string>
+    <string name="report_plus_17">Данные техосмотра ГИБДД</string>
+    <string name="report_plus_18">Пробег автомобиля (несколько значений, при наличии)</string>
+    <string name="report_plus_19">Проверка ПТС</string>
+    <string name="report_plus_20">Использование в качестве такси</string>
+    <string name="report_plus_21">Статистические данные</string>
+    <string name="report_plus_22">Расшифровка VIN кода</string>
+    <string name="report_plus_23">Данные таможни</string>
+    <string name="report_plus_24">Отзывные кампании</string>
+    <string name="dont_know_vin">Не знаете VIN код?</string>
+    <string name="payments">Нет подходящего способа оплаты?</string>
+    <string name="payment_dialog_title">Нет подходящего способа оплаты?</string>
+    <string name="payment_dialog_message">Другие способы оплаты Вы можете найти на нашем сайте antiperekup.com. Вбейте данные своего автомобиля и оплатите отчет</string>
+    <string name="payment_dialog_cancel">Отмена</string>
+    <string name="payment_dialog_open">Перейти на сайт</string>
+    <string name="payment_dialog_error">Не удалось найти подходящее приложение для открытия ссылки</string>
+    <string-array name="fssp_regions_array">
+        <item>Алтайский край</item>
+        <item>Амурская область</item>
+        <item>Архангельская область</item>
+        <item>Астраханская область</item>
+        <item>Белгородская область</item>
+        <item>Брянская область</item>
+        <item>Владимирская область</item>
+        <item>Волгоградская область</item>
+        <item>Вологодская область</item>
+        <item>Воронежская область</item>
+        <item>Еврейская АО</item>
+        <item>Забайкальский край</item>
+        <item>Ивановская область</item>
+        <item>Иркутская область</item>
+        <item>Кабардино-Балкария</item>
+        <item>Калининградская область</item>
+        <item>Калужская область</item>
+        <item>Камчатский край</item>
+        <item>Карачаево-Черкесия</item>
+        <item>Кемеровская область</item>
+        <item>Кировская область</item>
+        <item>Костромская область</item>
+        <item>Краснодарский край</item>
+        <item>Красноярский край</item>
+        <item>Курганская область</item>
+        <item>Курская область</item>
+        <item>Ленинградская область</item>
+        <item>Липецкая область</item>
+        <item>Магаданская область</item>
+        <item>Москва</item>
+        <item>Московская область</item>
+        <item>Мурманская область</item>
+        <item>Ненецкий АО</item>
+        <item>Нижегородская область</item>
+        <item>Новгородская область</item>
+        <item>Новосибирская область</item>
+        <item>Омская область</item>
+        <item>Оренбургская область</item>
+        <item>Орловская область</item>
+        <item>Пензенская область</item>
+        <item>Пермский край</item>
+        <item>Приморский край</item>
+        <item>Псковская область</item>
+        <item>Республика Адыгея</item>
+        <item>Республика Алтай</item>
+        <item>Республика Башкортостан</item>
+        <item>Республика Бурятия</item>
+        <item>Республика Дагестан</item>
+        <item>Республика Ингушетия</item>
+        <item>Республика Калмыкия</item>
+        <item>Республика Карелия</item>
+        <item>Республика Коми</item>
+        <item>Республика Крым</item>
+        <item>Республика Марий-Эл</item>
+        <item>Республика Мордовия</item>
+        <item>Республика Саха (Якутия)</item>
+        <item>Республика Татарстан</item>
+        <item>Республика Тыва</item>
+        <item>Республика Хакасия</item>
+        <item>Ростовская область</item>
+        <item>Рязанская область</item>
+        <item>Самарская область</item>
+        <item>Санкт-Петербург</item>
+        <item>Саратовская область</item>
+        <item>Сахалинская область</item>
+        <item>Свердловская область</item>
+        <item>Севастополь</item>
+        <item>Северная Осетия-Алания</item>
+        <item>Смоленская область</item>
+        <item>Ставропольский край</item>
+        <item>Тамбовская область</item>
+        <item>Тверская область</item>
+        <item>Томская область</item>
+        <item>Тульская область</item>
+        <item>Тюменская область</item>
+        <item>Удмуртская Республика</item>
+        <item>Ульяновская область</item>
+        <item>Хабаровский край</item>
+        <item>Ханты-Мансийский АО</item>
+        <item>Челябинская область</item>
+        <item>Чеченская Республика</item>
+        <item>Чувашская Республика</item>
+        <item>Чукотский АО</item>
+        <item>Ямало-Ненецкий АО</item>
+        <item>Ярославская область</item>
+    </string-array>
+</resources>

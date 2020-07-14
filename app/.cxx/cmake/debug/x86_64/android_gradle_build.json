@@ -1,0 +1,42 @@
+{
+  "stringTable": {
+    "0": "/Users/kmikheev/StudioProjects/gibdd-checker/app/.cxx/cmake/debug/x86_64",
+    "1": "--target=x86_64-none-linux-android21 --gcc-toolchain=/Users/kmikheev/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/kmikheev/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dkeys_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC"
+  },
+  "buildFiles": [
+    "/Users/kmikheev/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
+    "/Users/kmikheev/StudioProjects/gibdd-checker/app/src/main/jni/CMakeLists.txt",
+    "/Users/kmikheev/Library/Android/sdk/ndk/21.1.6352462/build/cmake/platforms.cmake"
+  ],
+  "cleanCommands": [
+    "/Users/kmikheev/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/kmikheev/StudioProjects/gibdd-checker/app/.cxx/cmake/debug/x86_64\" clean"
+  ],
+  "buildTargetsCommand": "/Users/kmikheev/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/kmikheev/StudioProjects/gibdd-checker/app/.cxx/cmake/debug/x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "keys-Debug-x86_64": {
+      "buildCommand": "/Users/kmikheev/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/kmikheev/StudioProjects/gibdd-checker/app/.cxx/cmake/debug/x86_64\" keys",
+      "buildType": "debug",
+      "toolchain": "4107342305",
+      "abi": "x86_64",
+      "artifactName": "keys",
+      "files": [
+        {
+          "src": "/Users/kmikheev/StudioProjects/gibdd-checker/app/src/main/jni/keys.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/Users/kmikheev/StudioProjects/gibdd-checker/app/build/intermediates/cmake/debug/obj/x86_64/libkeys.so"
+    }
+  },
+  "toolchains": {
+    "4107342305": {
+      "cCompilerExecutable": "/Users/kmikheev/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
+}

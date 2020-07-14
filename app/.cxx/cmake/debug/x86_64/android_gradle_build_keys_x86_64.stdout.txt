@@ -1,0 +1,3 @@
+ninja: Entering directory `/Users/kmikheev/StudioProjects/gibdd-checker/app/.cxx/cmake/debug/x86_64'
+[1/2] Building C object CMakeFiles/keys.dir/keys.c.o
+[2/2] Linking C shared library /Users/kmikheev/StudioProjects/gibdd-checker/app/build/intermediates/cmake/debug/obj/x86_64/libkeys.so

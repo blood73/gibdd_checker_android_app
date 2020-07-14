@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mileage_inapp_count">
+        <item quantity="zero">У вас нет оплаченных запросов</item>
+        <item quantity="one">У вас есть %1$d запрос</item>
+        <item quantity="two">У вас есть %1$d запроса</item>
+        <item quantity="few">У вас есть %1$d запроса</item>
+        <item quantity="many">У вас есть %1$d запросов</item>
+        <item quantity="other">У вас есть %1$d запросов</item>
+    </plurals>
+</resources>
